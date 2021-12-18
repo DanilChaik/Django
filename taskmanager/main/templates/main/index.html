@@ -1,10 +1,121 @@
-{% extends 'main/base.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyberpunk 2077</title>
+<link rel="icon" type="image/png" href="static/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+<header class="masthead">
+<div id="str"></div> 
+  <div class="block__nav">
+    <a class="nav__ling" href="#">Главная</a>
+    <a class="nav__ling" href="#str1">Системные требования</a>
+    <a class="nav__ling" href="#str2">Краткое описание</a>
+    <a class="nav__ling" href="#str3">Минусы игры</a>
+    <a class="nav__ling" href="#str4">Стоит ли играть</a>
+  </nav>
+</div>	
+  <div class="logo">Cyberpunk 2077</div>
+  <div class="form__link">
+    <a href="{% url 'forma' %}" class="title">Form for adding a game</a>
+  </div>
+</header>
+<div class="block-community-wide">
+   <a class="vk" href=""><img src="static/img/vk.svg" alt="">VK</a>
+   <a class="ok" href=""><img src="static/img/ok.svg" alt="">OK</a>
+   <a class="in" href=""><img src="static/img/inst.svg" alt="">IN</a>
+   <a class="yt" href=""><img src="static/img/yt.svg" alt="">YT</a>
+   <a class="twt" href=""><img src="static/img/twt.svg" alt="">Twitch</a>
+   <a class="dc" href=""><img src="static/img/dc.svg" alt="">Discord</a>
+</div>
+<div class="form__link"></div>
+<img src="static/img/cp4.jpg" alt="">
+<main id="content" class="main-area">
+  <div id="str1"></div>
+  <section class="splash grid">
+    <div class="splash-content">
+      <h2 class="content-title">Системные требования</h2>
+      <div class="splash-text">
+        <p>
+          <p>Процессор: Intel Core i7-4790 / AMD Ryzen 3 3200G
+          <p>Оперативная память: 12 GB</p>
+          <p>Видеокарта: Nvidia GeForce RTX 2060 / AMD Radeon RX 5700 XT</p>
+          <p>Видеопамять: 6 GB</p>
+          <p>Место на диске: 70 GB</p>
+        </p>
+      </div></div>
+	</section>
+<div id="str2"></div>
+  <section class="buckets grid">
+    <ul>
+      <li>
+        <img src="static/img/tor.png" alt="">
+        <div class="bucket">
+          <h3 class="bucket-title">Где скачать</h3>
+          <p>Скачать Cyberpank 2077 можно двумя способами. <p>Первый - подержать разработчиков и купить игру на оффициальном сайте.</p> Второй способ - полазить по просторам интернета и скачать игру с Torrenta. </p>
+        </div>
+      </li>
+      <li>
+        <img src="static/img/cp1.jpg" alt="">
+        <div class="bucket">
+          <h3 class="bucket-title">С чего начать</h3>
+          <p>Начнём с выбора предистории персонажа.К выбору стоит отнестись серьёзно: она определяет первые 20-30 минут игры, открывает уникальные сюжетные линии, влияет на концовку и даёт несколько особых фраз в диалогах, помогающих вашему отыгрышу.
 
-{% block title %}
-Главная страница
-{% endblock %}
+          </p>
+        </div>
+      </li>
+      <li>
+        <img src="static/img/gog.jpg" alt="">
+        <div class="bucket">
+          <h3 class="bucket-title">Про игру</h3>
+          <p>Cyberpunk 2077 — мультиплатформенная компьютерная игра в жанре Action/RPG, разработанная польской студией CD Projekt RED. Действия происходят спустя 57 лет в большом городе Найт-Сити. Анонс Cyberpunk 2077 состоялся 30 мая 2012 года. </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+    <div id="str3"></div>
+  <section class="more grid">
 
-{% block content %}
-    <h1>Главная страница</h1>
-    <p>Просто текс</p>
-{% endblock %}
+	<div class="more-content">
+      <h2 class="content-title">Расмотрим минусы игры</h2>
+      <p>Слабая вариативность в диалогах. Ещё одним важным элементом ролевого отыгрыша, с которым в Cyberpunk 2077 пока проблемы, является диалоговая система. Беседуя с персонажами, вы не увидите огромное число строчек диалогов, вместо этого на экране будет лишь два варианта реплики: своеобразное «да» и «расспросить подробнее». Второй пункт как раз скрывает в себе ветвистый список реплик, каждая из которых открывается по ходу диалога.</p>
+    </div>
+  </section>
+  <img src="static/img/cp22.jpg" alt="">
+<div id="str4"></div>
+  <section class="more1 grid">
+
+	<div class="more1-content">
+      <h2 class="content1-title">Почему стоит поиграть в Cyberpank 2077</h2>
+       <p>Чем так хорош Cyberpunk 2077, что о нем все говорят? У Cyberpunk 2077 есть три фактора-столпа, которые делают эту игру одним из самых ожидаемых проектов последних лет: кредит доверия игрового сообщества к разработчикам, амбициозность проекта и огромная фанбаза оригинала. Даже если не все амбиции разработчиков сохранятся до релиза, остальные два фактора определенно поспособствуют продажам игры, выведя её в список бестселлеров. </p>
+      <p class="content1-title1">Отметим 3 фактора почему стоит </p>  
+    </div>
+  </section>
+  <section class="buckets grid">
+    <ul>
+      <li class="bucket1">
+        <div class="bucket">
+          <h3 class="bucket-title">Игру разрабатывает польская студия CD Projekt RED, которую игровое сообщество знает по играм серии «Ведьмак». А у них очень хорошая репутация в этой сфере.</h3>
+         </div>
+      <li class="bucket1">
+        <div class="bucket">
+          <h3 class="bucket-title">Каждая номерная часть игры по франшизе была очень тепло принята игроками, игры неизменно преодолевали планку в один миллион проданных дисков в первый же год продаж.</h3>
+        </div>
+      </li>
+      <li class="bucket1">
+        <div class="bucket">
+          <h3 class="bucket-title">CD Projekt RED наработала огромный кредит доверия аудитории — ни один из проектов студии за почти 20 лет её существования не был провальным.</h3>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+    <img src="static/img/cp33.jpg" alt="">
+  </section class="twins grid">
+<div id="str5"></div>
+</footer>
+
+</body>
+</html>
